@@ -1,6 +1,6 @@
-# Chatbot
+# LLM 🤖
 
-Bot 🤖 = Streamlit 👑 + Langchain 🦜️⛓️ + LLaMA 🦙
+🤖 = Streamlit 👑 + Langchain 🦜️ + LLaMA 🦙
 
 1. **Streamlit:**
    The app is built using [Streamlit](https://streamlit.io/) and allows you to interact with a language model-based chatbot. The app enables you to have conversations with the chatbot and see its responses.
@@ -15,11 +15,11 @@ Bot 🤖 = Streamlit 👑 + Langchain 🦜️⛓️ + LLaMA 🦙
 
 ## Installation
 
-1. Make sure you have [Python](https://www.python.org/) and [Poetry](https://python-poetry.org/) installed on your system.
+1. Make sure you have [Pyenv](https://github.com/pyenv/pyenv), [Poetry](https://python-poetry.org/), [Task](https://taskfile.dev/#/installation) installed on your system.
 2. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/alissadb/chatbot.git
+   git clone https://github.com/alissadb/chatbot_llm.git
    ```
 
 3. Navigate to the repository directory:
@@ -28,9 +28,7 @@ Bot 🤖 = Streamlit 👑 + Langchain 🦜️⛓️ + LLaMA 🦙
    cd chatbot
    ```
 
-4. Install Task on your system by following the instructions in the [Task documentation](https://taskfile.dev/#/installation). The repository uses Task to define and run tasks in a simple and declarative way.
-
-5. To set up the local development environment with the required dependencies. Install the local environment:
+4. This repo uses Task to run task in a simple way. To set up the local development environment with the required dependencies. Install the local environment:
 
    ```bash
    task setup-local-env
