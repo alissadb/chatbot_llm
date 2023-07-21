@@ -1,0 +1,30 @@
+version: "3"
+
+vars:
+  PYTHON_VERSION:
+    sh: cat .python-version
+
+tasks:
+  setup-python-env:
+    desc: Setup Python environment with pyenv and poetry
+    cmds:
+      - pyenv versions --bare | grep -xq {{.PYTHON_VERSION}} || pyenv install {{.PYTHON_VERSION}}
+      - poetry env use {{.PYTHON_VERSION}}
+
+  setup-pre-commit:
+    desc: Setup pre-commit hooks
+    cmds:
+      - git init
+      - poetry run pre-commit install
+
+  setup-local-env:
+    desc: Setup local environment
+    cmds:
+      - task: setup-python-env
+      - poetry update
+      - poetry install
+      - task: setup-pre-commit
+
+  run-app:
+    cmds:
+      - streamlit run chatbot_llm/app.py
