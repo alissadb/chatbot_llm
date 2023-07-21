@@ -15,21 +15,16 @@
 
 ## Installation
 
-1. Make sure you have [Pyenv](https://github.com/pyenv/pyenv), [Poetry](https://python-poetry.org/), [Task](https://taskfile.dev/#/installation) installed on your system.
+Make sure you have [Pyenv](https://github.com/pyenv/pyenv), [Poetry](https://python-poetry.org/), [Task](https://taskfile.dev/#/installation) installed on your system.
 
-2. Clone this repository to your local machine:
+1. Clone this repository to your local machine and navigate to the repositry directory:
 
    ```bash
    git clone https://github.com/alissadb/chatbot_llm.git
-   ```
-
-3. Navigate to the repository directory:
-
-   ```bash
    cd chatbot
    ```
 
-4. This repo uses Task to run task. To set up the local development environment with the required dependencies. Install the local environment:
+2. This repo uses Task to run task. To set up the local development environment with the required dependencies. Install the local environment:
 
    ```bash
    task setup-local-env
@@ -47,7 +42,7 @@
 llm_chain = get_llm_chain(model_name="models/llama-2-7b-chat.ggmlv3.q2_K.bin")
 ```
 
-2. To run the 🤖 run the following command:
+3. To run the 🤖 run the following command:
 
 ```bash
 task run-app
