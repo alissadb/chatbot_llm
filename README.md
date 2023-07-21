@@ -3,19 +3,20 @@
 🤖 = Streamlit 👑 + Langchain 🦜️ + LLaMA 🦙
 
 1. **Streamlit:**
-   The app is built using [Streamlit](https://streamlit.io/) and allows you to interact with a language model-based chatbot. The app enables you to have conversations with the chatbot and see its responses.
+   The app is built using [Streamlit](https://streamlit.io/) and allows you to interact with the chatbot.
 
 2. **Langchain:**
-   [Langchain](https://python.langchain.com/docs/get_started/introduction.html) is a Python library for natural language processing tasks. It provides various functionalities, including text preprocessing, language detection, sentiment analysis, and more. The chatbot app utilizes Langchain's capabilities to process and understand user input.
+   [Langchain](https://python.langchain.com/docs/get_started/introduction.html) Langchain is a framework for developing application powered by language models.
 
 3. **LLaMA:**
-   [LLaMA](https://ai.meta.com/blog/large-language-model-llama-meta-ai/) is a pre-trained language model capable of generating creative and contextually relevant responses in conversations. It powers the chatbot's language generation and understanding abilities.
+   [LLaMA](https://ai.meta.com/blog/large-language-model-llama-meta-ai/) is a LLM from Meta. And powers the chatbot's language generation and understanding abilities.
 
 ![Example](figures/Example.png)
 
 ## Installation
 
 1. Make sure you have [Pyenv](https://github.com/pyenv/pyenv), [Poetry](https://python-poetry.org/), [Task](https://taskfile.dev/#/installation) installed on your system.
+
 2. Clone this repository to your local machine:
 
    ```bash
@@ -28,7 +29,7 @@
    cd chatbot
    ```
 
-4. This repo uses Task to run task in a simple way. To set up the local development environment with the required dependencies. Install the local environment:
+4. This repo uses Task to run task. To set up the local development environment with the required dependencies. Install the local environment:
 
    ```bash
    task setup-local-env
