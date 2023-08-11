@@ -15,9 +15,9 @@
 
 ## Installation
 
-Make sure you have [Pyenv](https://github.com/pyenv/pyenv), [Poetry](https://python-poetry.org/), [Task](https://taskfile.dev/#/installation) installed on your system.
+> **⚠️ Warning:** Currently, this project is only compatible with macOS and Linux.
 
-> **Note:** Currently, this project is only compatible with macOS and Linux.
+Make sure you have [Pyenv](https://github.com/pyenv/pyenv), [Poetry](https://python-poetry.org/), [Task](https://taskfile.dev/#/installation) installed on your system.
 
 1. Clone this repository to your local machine and navigate to the repositry directory:
 
